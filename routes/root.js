@@ -47,14 +47,8 @@ async function getTweets() {
       console.log("Fecha no encontrada en la base de datos: ", err);
       throw err;
     }
-<<<<<<< HEAD
     console.log(result.docs[0].tweets);
     return result.docs[0].tweets;
-=======
-    data = result.docs[0].tweets;
-    //console.log(result.docs[0].tweets);
-    console.log(data);
->>>>>>> QueryToDB
   });
 }
 
