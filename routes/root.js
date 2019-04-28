@@ -37,6 +37,8 @@ router.post("/guardar_text", (req, res) => {
   console.log(req.body.text);
 });
 
+let data = [];
+
 async function getTweets() {
   var db = cloudant.db.use("tweetdb");
 
@@ -45,9 +47,27 @@ async function getTweets() {
       console.log("Fecha no encontrada en la base de datos: ", err);
       throw err;
     }
+<<<<<<< HEAD
     console.log(result.docs[0].tweets);
     return result.docs[0].tweets;
+=======
+    data = result.docs[0].tweets;
+    //console.log(result.docs[0].tweets);
+    console.log(data);
+>>>>>>> QueryToDB
   });
 }
+
+/*async function getTweets() {
+    var db = cloudant.db.use("tweetdb");
+  
+    db.find({ selector: { _id: "2500" } }, function(err, result) {
+      if (err) {
+        console.log("Fecha no encontrada en la base de datos: ", err);
+        throw err;
+      }
+      console.log(result.docs[0].tweets);
+    });
+  }*/
 
 module.exports = router;
