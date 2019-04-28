@@ -46,6 +46,7 @@ async function getTweets() {
       throw err;
     }
     console.log(result.docs[0].tweets);
+    return result.docs[0].tweets;
   });
 }
 
