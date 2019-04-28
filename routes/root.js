@@ -6,8 +6,4 @@ router.get('/', (req, res) => {
     res.render('index', {});
 });
 
-router.get('/predictive', (req, res) =>{
-    res.render('predictive', {});
-})
-
 module.exports = router;
