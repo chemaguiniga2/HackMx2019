@@ -10,13 +10,17 @@
 </head>
 <body class="w3-container" style="background-color: #9c9c9c">
     <div>
-        <input type="text" name="text"><br>
         <input type="text" name="url"><br>
     </div>
     <div>
-        <p>
-            <input class="boton" type="submit" value="Buscar">
-        </p>
+            <form action="/guardar_text" method="POST">
+                <p>
+                    <input type="text" name="text" id="text"><br>
+                </p>
+                <p>
+                    <input class="boton" type="submit" value="Guardar">
+                </p>
+            </form>
     </div>
     <div>
         <p></p>

@@ -10,4 +10,10 @@ router.get('/predictive', (req, res) =>{
     res.render('predictive', {});
 })
 
+router.post('/guardar_text', (req, res) => {
+    console.log(req.body);
+    console.log(req.body.text);
+
+})
+
 module.exports = router;
