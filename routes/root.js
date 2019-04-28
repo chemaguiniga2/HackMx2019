@@ -5,5 +5,5 @@ const path = require('path');
 router.get('/', (req, res) => {
     res.render('index', {});
 });
-
+// Mi prueba
 module.exports = router;
