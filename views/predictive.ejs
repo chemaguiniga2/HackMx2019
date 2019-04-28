@@ -59,15 +59,18 @@
         </div>
       </nav>
       <div class="container" style="padding: 50px;">
-        <form>
+        <form method="post" action="/predictive/url">
             <div class="form-group">
                     <label for="url">URL</label>
-                    <input class="form-control" type="text" name="url" id="url">
+                    <input class="form-control" type="text" name="value" id="url">
             </div>
+        </form>
+        <form method="post" action="/predictive/text">
             <div class="form-group">
-                    <label for="txt">Txt</label>
-                    <input class="form-control" type="text" name="txt" id="txt">
+                    <label for="url">TEXT</label>
+                    <input class="form-control" type="text" name="text" id="text">
             </div>
+        </form>
             <br>
             <p>
                 <!--Aqui va los datos arrojados por el modelo-->
